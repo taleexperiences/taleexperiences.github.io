@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tale Experiences | Indie Game Studio</title>
+<meta name="description" content="Tale Experiences is a game studio built around telling stories. We make games for the sake of a good tale, whatever form it takes." />
+<link rel="icon" type="image/png" href="/Tale%20Experiences%20Mini%20(3).png">
+<meta property="og:site_name" content="Tale Experiences">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="Tale Experiences | Indie Game Studio">
+<meta property="og:description" content="Tale Experiences is a game studio built around telling stories. We make games for the sake of a good tale, whatever form it takes.">
+<meta property="og:image" content="https://taleexperiences.com/Tale%20Experiences%20Png.png">
+<meta property="og:url" content="https://taleexperiences.com/">
+<meta name="twitter:title" content="Tale Experiences | Indie Game Studio">
+<meta name="twitter:description" content="Tale Experiences is a game studio built around telling stories. We make games for the sake of a good tale, whatever form it takes.">
+<meta name="twitter:image" content="https://taleexperiences.com/Tale%20Experiences%20Png.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Tale Experiences",
+  "url":"https://taleexperiences.com",
+  "logo":"https://taleexperiences.com/Tale%20Experiences%20Png.png",
+  "description":"We start with a story and build a game around it.",
+  "foundingDate":"2026",
+  "address":{"@type":"PostalAddress","addressCountry":"FI"},
+  "sameAs":[
+    "https://discord.gg/wjqpRnrNYR",
+    "https://www.tiktok.com/@taleexperiences",
+    "https://www.instagram.com/tale_experiences",
+    "https://www.youtube.com/@TaleExperiences",
+    "https://store.steampowered.com/app/4680960"
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="#">
+    <img src="/Tale%20Experiences%20Mini%20(3).png" alt="Tale Experiences">
+    <span>TALE EXPERIENCES</span>
+  </a>
+  <div class="nav-links">
+    <button class="active" data-tab="home">Home</button>
+    <button data-tab="games">Games</button>
+    <button data-tab="developers">Developers</button>
+    <button data-tab="social">Social</button>
+    <a class="nav-press" href="/roadmap/">Roadmap</a>
+    <a class="nav-press" href="/press-kit/">Press Kit</a>
+  </div>
+</nav>
+
+<div id="app-content">
+
+<!-- ============ HOME TAB ============ -->
+<div id="tab-home" class="tab-content active">
+  <div class="hero">
+    <div class="hero-inner">
+      <img class="hero-logo fade-in" src="/Tale%20Experiences%20Png.png" alt="Tale Experiences" style="width:1080px;max-width:90vw;height:auto;border-radius:0;box-shadow:none;">
+      <h1 class="fade-in fade-in-d1"><span style="color:var(--alert)">We don't make games</span><br><span>we make experiences</span></h1>
+      <p class="fade-in fade-in-d2">
+        We start with a story and build a game around it. Genre, setting and mechanics are all chosen to serve the tale, not the other way around.
+      </p>
+      <div class="hero-actions fade-in fade-in-d3">
+        <button class="btn btn-primary" onclick="document.querySelector('[data-tab=games]').click()">Check out our games</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ GAMES TAB ============ -->
+<div id="tab-games" class="tab-content">
+  <section>
+    <h2 class="section-title fade-in">Our Games</h2>
+    <p class="section-sub fade-in fade-in-d1">Our current and upcoming releases.</p>
+
+    <div class="game-card fade-in fade-in-d2" tabindex="0" role="button" style="cursor:pointer;" onclick="if(event.target.closest('a,button'))return;window.location='/fire-lookout/'" onkeydown="if(event.key==='Enter'||event.key===' ')this.click()">
+      <figure>
+        <img src="/library_capsule.png" alt="Fire Lookout: Abandoned Post">
+      </figure>
+      <div class="game-card-body">
+        <h3>Fire Lookout: Abandoned Post</h3>
+        <div class="tagline">Now Available on Steam</div>
+        <p>
+          A first-person narrative mystery solving game. You get hired as a fire lookout at Summit Ridge National Park. As you settle in, you can't shake the feeling that something is off. As you begin to act on that feeling, you start to uncover the truth, but at what cost?
+        </p>
+        <div class="tags">
+          <span class="alert">Psychological Horror</span>
+          <span class="alert">Mystery Driven</span>
+          <span>Story Rich</span>
+          <span>Open World</span>
+          <span>Choices Matter</span>
+          <span>Atmospheric</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://store.steampowered.com/app/4680960" target="_blank" rel="noopener">View on Steam</a>
+          <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=sXhh7HV_QMg" target="_blank" rel="noopener">Watch Trailer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ DEVELOPERS TAB ============ -->
+<div id="tab-developers" class="tab-content">
+  <section>
+    <h2 class="section-title fade-in">The Team</h2>
+    <p class="section-sub fade-in fade-in-d1">The developers behind Tale Experiences.</p>
+
+    <div class="dev-grid">
+      <div class="dev-card fade-in fade-in-d2" tabindex="0" role="button" onclick="window.location='/shazie/'" style="cursor:pointer;" onkeydown="if(event.key==='Enter'||event.key===' ')window.location='/shazie/'">
+        <div class="dev-avatar"><img src="https://cdn.discordapp.com/avatars/603580332947669025/74ad9ce4232b0df767233a25d0059bfa.png" alt="Shazie"></div>
+        <h3>Shazie</h3>
+        <div class="dev-realname" data-label="Real name">Benjamin Strand</div>
+        <div class="role">Founder & Lead Developer</div>
+        <div class="dev-discord">shazie.</div>
+      </div>
+
+      <div class="dev-card fade-in fade-in-d3" tabindex="0" role="button" onclick="window.location='/zombigast/'" style="cursor:pointer;" onkeydown="if(event.key==='Enter'||event.key===' ')window.location='/zombigast/'">
+        <div class="dev-avatar"><img src="https://cdn.discordapp.com/avatars/429741883581923331/267d2d3f39b5b7efc1aa9e0ccb1e8f99.png" alt="zombigast"></div>
+        <h3>zombigast</h3>
+        <div class="dev-realname" data-label="Real name">Adrian Thors</div>
+        <div class="role">Founder & Lead Developer</div>
+        <div class="dev-discord">zombigast</div>
+      </div>
+    </div>
+    <div class="dev-invite">
+      <div class="dev-invite-content">
+        <img class="dev-invite-logo" src="/Tale%20Experiences%20Mini%20(3).png" alt="Tale Experiences">
+        <h3>Interested in Development?</h3>
+        <p>Want to help shape what comes next? Join our development Discord. Talk game design, share ideas, contribute to projects, and work alongside the team. Whether you code, make art, write music, or just have good ideas, there's a place for you.</p>
+        <a class="btn btn-primary" href="https://discord.gg/pWCSREpXN7" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 5.3A18 18 0 0 0 15.8 4l-.3.6a13 13 0 0 1 3.9 1.6 14.7 14.7 0 0 0-12.8 0 13 13 0 0 1 4-1.6L10.2 4a18 18 0 0 0-4.5 1.4C3.4 9 2.7 12.6 3 16.1A18.4 18.4 0 0 0 8.4 19l.7-1.2a11.6 11.6 0 0 1-1.8-.9c.2-.1.3-.2.5-.3a13 13 0 0 0 9.4 0l.5.3c-.6.4-1.2.6-1.8.9l.7 1.2a18.4 18.4 0 0 0 5.4-2.9c.4-4.3-.7-7.8-2.7-10.8zM9.7 14.3c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.6 1.7-1.5 1.7zm5.6 0c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.6 1.7-1.5 1.7z"/></svg>
+          Join the Dev Discord
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ SOCIAL TAB ============ -->
+<div id="tab-social" class="tab-content">
+
+  <section>
+    <h2 class="section-title fade-in">Instagram</h2>
+    <p class="section-sub fade-in fade-in-d1">Our latest posts.</p>
+    <div class="elfsight-app-c8b77300-50a0-4ab0-bada-129f289bf85d" data-elfsight-app-lazy></div>
+  </section>
+
+  <section>
+    <h2 class="section-title fade-in">TikTok</h2>
+    <p class="section-sub fade-in fade-in-d1">Our latest TikToks.</p>
+    <div class="elfsight-app-6d884765-c8dd-4669-852e-1c073f08b178" data-elfsight-app-lazy></div>
+  </section>
+
+  <section>
+    <h2 class="section-title fade-in">YouTube</h2>
+    <p class="section-sub fade-in fade-in-d1">Our latest videos.</p>
+    <div class="elfsight-app-ee52f1e6-ec6e-4782-8294-ae5bd0a3d191" data-elfsight-app-lazy></div>
+  </section>
+
+  <section>
+    <h2 class="section-title fade-in">X (Twitter)</h2>
+    <p class="section-sub fade-in fade-in-d1">Our latest posts.</p>
+    <div class="elfsight-app-52de4fed-90a6-4607-8ea3-0623ef181674" data-elfsight-app-lazy></div>
+  </section>
+
+  <section>
+    <h2 class="section-title fade-in">Reddit</h2>
+    <p class="section-sub fade-in fade-in-d1">Recent posts from r/FireLookoutGame.</p>
+    <div class="reddit-grid" id="social-reddit">
+      <p style="color:var(--steel-dim);font-size:14px;">Loading...</p>
+    </div>
+  </section>
+</div>
+
+<script>
+  /* Reddit via RSS feed (same approach as YouTube) */
+  var rdContainer = document.getElementById('social-reddit');
+  if (rdContainer) {
+    var rdRss = 'https://www.reddit.com/r/FireLookoutGame/.rss';
+    var rdProxy = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(rdRss);
+    fetch(rdProxy).then(function(r){
+      if (!r.ok) throw new Error('Failed');
+      return r.text();
+    }).then(function(xmlText){
+      var parser = new DOMParser();
+      var xml = parser.parseFromString(xmlText, 'text/xml');
+      var entries = xml.querySelectorAll('entry');
+      var html = '';
+      var count = 0;
+      entries.forEach(function(entry){
+        if (count >= 5) return;
+        count++;
+        var title = entry.querySelector('title').textContent;
+        var linkEl = entry.querySelector('link[rel="alternate"]');
+        var link = linkEl ? linkEl.getAttribute('href') : 'https://reddit.com/r/FireLookoutGame/';
+        var pubEl = entry.querySelector('published');
+        var date = pubEl ? pubEl.textContent.slice(0, 10) : '';
+        var content = entry.querySelector('content') || entry.querySelector('summary');
+        var thumbSrc = '';
+        if (content) {
+          var thumbMatch = content.textContent.match(/<img[^>]+src=["']([^"']+)["']/);
+          if (thumbMatch) thumbSrc = thumbMatch[1];
+        }
+        var thumbHtml = thumbSrc ? '<div class="reddit-thumb"><img src="' + thumbSrc + '" alt="" loading="lazy"></div>' : '';
+        html += '<a class="reddit-card" href="' + link + '" target="_blank" rel="noopener">' +
+          thumbHtml +
+          '<div class="reddit-info"><div class="reddit-title">' + title + '</div>' +
+          '<div class="reddit-meta">' + date + '</div></div></a>';
+      });
+      rdContainer.innerHTML = html || '<p style="color:var(--steel-dim);font-size:14px;">No posts found.</p>';
+    }).catch(function(){
+      rdContainer.innerHTML = '<p style="color:var(--steel-dim);font-size:14px;">Could not load Reddit posts. <a href="https://reddit.com/r/FireLookoutGame/" target="_blank" rel="noopener" style="color:var(--green);">Visit r/FireLookoutGame.</a></p>';
+    });
+  }
+
+  /* Load Elfsight platform for SPA compatibility */
+  (function(){
+    var apps = document.querySelectorAll('[class*="elfsight-app-"]');
+    if (apps.length) {
+      var s = document.createElement('script');
+      s.src = 'https://elfsightcdn.com/platform.js';
+      s.async = true;
+      document.head.appendChild(s);
+    }
+  })();
+</script>
+
+</div>
+
+<!-- SOCIALS BAR -->
+<div class="socials-bar">
+  <a href="https://discord.gg/wjqpRnrNYR" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 5.3A18 18 0 0 0 15.8 4l-.3.6a13 13 0 0 1 3.9 1.6 14.7 14.7 0 0 0-12.8 0 13 13 0 0 1 4-1.6L10.2 4a18 18 0 0 0-4.5 1.4C3.4 9 2.7 12.6 3 16.1A18.4 18.4 0 0 0 8.4 19l.7-1.2a11.6 11.6 0 0 1-1.8-.9c.2-.1.3-.2.5-.3a13 13 0 0 0 9.4 0l.5.3c-.6.4-1.2.6-1.8.9l.7 1.2a18.4 18.4 0 0 0 5.4-2.9c.4-4.3-.7-7.8-2.7-10.8zM9.7 14.3c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.6 1.7-1.5 1.7zm5.6 0c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.6 1.7-1.5 1.7z"/></svg>
+    Discord
+  </a>
+  <a href="https://www.tiktok.com/@taleexperiences" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8a4.3 4.3 0 0 1-3.1-1.4v8.9a4.6 4.6 0 1 1-3.9-4.5v2.3a2.3 2.3 0 1 0 1.6 2.2V2h2.3a4.3 4.3 0 0 0 3.1 3.6z"/></svg>
+    TikTok
+  </a>
+  <a href="https://www.instagram.com/tale_experiences" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+    Instagram
+  </a>
+  <a href="https://store.steampowered.com/app/4680960" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.0052 2C6.75435 2 2.44852 6.05 2.04102 11.1975L7.40102 13.4125C7.85518 13.1033 8.40352 12.9208 8.99435 12.9208C9.04685 12.9208 9.09852 12.9242 9.15102 12.9258L11.5352 9.47417V9.425C11.5352 7.34583 13.2252 5.655 15.3052 5.655C17.3835 5.655 19.0752 7.3475 19.0752 9.4275C19.0752 11.5075 17.3835 13.1983 15.3052 13.1983H15.2177L11.821 15.6242C11.821 15.6675 11.8243 15.7117 11.8243 15.7567C11.8243 17.3192 10.5618 18.5867 8.99935 18.5867C7.63685 18.5867 6.48602 17.6092 6.22352 16.3142L2.38602 14.725C3.57435 18.9225 7.42768 22 12.0052 22C17.5277 22 22.0043 17.5225 22.0043 12C22.0043 6.4775 17.5268 2 12.0052 2ZM7.07852 16.6667C7.29685 17.1192 7.67352 17.4992 8.17352 17.7083C9.25435 18.1575 10.501 17.645 10.9502 16.5625C11.1693 16.0375 11.1702 15.4633 10.9543 14.9383C10.7385 14.4133 10.3293 14.0042 9.80685 13.7858C9.28685 13.5692 8.73185 13.5783 8.24185 13.7608L9.51102 14.2858C10.3077 14.6192 10.6852 15.5358 10.3518 16.3317C10.021 17.1292 9.10435 17.5067 8.30685 17.175L7.07852 16.6667ZM17.8185 9.4225C17.8185 8.0375 16.691 6.91 15.306 6.91C13.9185 6.91 12.7935 8.0375 12.7935 9.4225C12.7935 10.81 13.9185 11.935 15.306 11.935C16.6918 11.935 17.8185 10.81 17.8185 9.4225ZM15.3118 7.53C16.3527 7.53 17.2002 8.375 17.2002 9.41833C17.2002 10.4608 16.3527 11.3058 15.3118 11.3058C14.2677 11.3058 13.4243 10.4608 13.4243 9.41833C13.4243 8.375 14.2685 7.53 15.3118 7.53Z"/></svg>
+    Steam
+  </a>
+  <a href="https://www.youtube.com/@TaleExperiences" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4a2.6 2.6 0 0 0-1.8 1.8C2 8.7 2 12 2 12s0 3.3.4 4.8a2.6 2.6 0 0 0 1.8 1.8c1.5.4 7.8.4 7.8.4s6.3 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.8C22 15.3 22 12 22 12s0-3.3-.4-4.8z"/><path d="M10 15.5V8.5l5.2 3.5z" fill="#07090b"/></svg>
+    YouTube
+  </a>
+</div>
+
+<footer>
+  <div>&copy; 2026 Tale Experiences. All rights reserved.</div>
+  <div style="margin-top:10px; font-size:11px;">
+    <a href="/privacy/" style="color:var(--steel-dim);">Privacy Policy</a>
+    <span style="margin:0 8px; color:var(--steel-dim);">&middot;</span>
+    <a href="/legal/" style="color:var(--steel-dim);">Legal Notice</a>
+  </div>
+</footer>
+
+<script>
+  const tabs = document.querySelectorAll('[data-tab]');
+  const contents = {
+    home: document.getElementById('tab-home'),
+    games: document.getElementById('tab-games'),
+    developers: document.getElementById('tab-developers'),
+    social: document.getElementById('tab-social')
+  };
+
+  function switchTab(name) {
+    tabs.forEach(b => b.classList.remove('active'));
+    document.querySelector(`[data-tab="${name}"]`).classList.add('active');
+    Object.values(contents).forEach(c => c.classList.remove('active'));
+    contents[name].classList.add('active');
+  }
+
+  tabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      switchTab(btn.dataset.tab);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  if (window.location.hash === '#games') switchTab('games');
+  if (window.location.hash === '#developers') switchTab('developers');
+  if (window.location.hash === '#social') switchTab('social');
+</script>
+
+<script src="/script.js"></script>
+</body>
+</html>
