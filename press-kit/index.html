@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Press Kit | Tale Experiences</title>
+<meta name="description" content="Press kit for Tale Experiences | a game studio that tells tales in game format." />
+<link rel="icon" type="image/png" href="/Tale%20Experiences%20Mini%20(3).png">
+<meta property="og:site_name" content="Tale Experiences">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="Press Kit | Tale Experiences">
+<meta property="og:description" content="Press kit for Tale Experiences | a game studio that tells tales in game format.">
+<meta property="og:image" content="https://taleexperiences.com/Tale%20Experiences%20Mini%20(3).png">
+<meta property="og:url" content="https://taleexperiences.com/press-kit/">
+<meta name="twitter:title" content="Press Kit | Tale Experiences">
+<meta name="twitter:description" content="Press kit for Tale Experiences | a game studio that tells tales in game format.">
+<meta name="twitter:image" content="https://taleexperiences.com/Tale%20Experiences%20Mini%20(3).png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">
+    <img src="/Tale%20Experiences%20Mini%20(3).png" alt="Tale Experiences">
+    <span>TALE EXPERIENCES</span>
+  </a>
+  <a class="nav-back" href="/">&larr; Back</a>
+</nav>
+
+<div id="app-content">
+<style>
+  .hero{
+    min-height:50vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 5vw 60px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:'';
+    position:absolute;
+    top:-50%; left:-50%;
+    width:200%; height:200%;
+    background:radial-gradient(circle at 50% 50%, var(--green-glow) 0%, transparent 50%);
+    opacity:0.3;
+    pointer-events:none;
+  }
+  .hero-inner{position:relative; max-width:700px;}
+  .hero h1{
+    font-family:'Inter Tight', sans-serif;
+    font-size:clamp(32px,4.5vw,50px);
+    font-weight:800;
+    letter-spacing:-0.03em;
+    color:var(--ink);
+  }
+  .hero h1 span{color:var(--green);}
+  .hero p{
+    margin-top:16px;
+    font-size:16px;
+    color:var(--steel-dim);
+  }
+
+  section{
+    padding:64px 5vw;
+    max-width:960px;
+    margin:0 auto;
+    width:100%;
+  }
+  .section-title{
+    font-family:'Inter Tight', sans-serif;
+    font-size:clamp(22px,2.5vw,30px);
+    font-weight:700;
+    letter-spacing:-0.02em;
+    color:var(--ink);
+    margin-bottom:24px;
+    padding-bottom:12px;
+    border-bottom:1px solid var(--line);
+  }
+
+  .fact-grid{
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:8px 24px;
+  }
+  .fact-grid dt{
+    font-size:13px;
+    font-weight:600;
+    color:var(--steel-dim);
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    padding:8px 0;
+  }
+  .fact-grid dd{
+    font-size:14px;
+    color:var(--steel);
+    padding:8px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .fact-grid dd:last-child{border-bottom:none;}
+
+  .about-text p{
+    font-size:15px;
+    color:var(--steel-dim);
+    line-height:1.7;
+    margin-bottom:14px;
+  }
+
+  .logo-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:16px;
+  }
+  .logo-card{
+    background:var(--panel);
+    border:1px solid var(--panel-edge);
+    border-radius:10px;
+    padding:24px;
+    text-align:center;
+    transition:border-color .2s;
+  }
+  .logo-card:hover{border-color:var(--green);}
+  .logo-card img{
+    max-width:100%;
+    max-height:120px;
+    display:block;
+    margin:0 auto 12px;
+    object-fit:contain;
+  }
+  .logo-card a{
+    font-size:12px;
+    color:var(--green);
+    text-decoration:none;
+  }
+  .logo-card a:hover{text-decoration:underline;}
+
+  .screenshot-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:12px;
+  }
+  .screenshot-grid img{
+    width:100%;
+    display:block;
+    border-radius:8px;
+    border:1px solid var(--panel-edge);
+    cursor:pointer;
+    transition:opacity .2s;
+  }
+  .screenshot-grid img:hover{opacity:.85;}
+
+  .lightbox{
+    display:none;
+    position:fixed; inset:0;
+    z-index:100;
+    background:rgba(0,0,0,.92);
+    align-items:center;
+    justify-content:center;
+    padding:5vw;
+    cursor:zoom-out;
+  }
+  .lightbox.open{display:flex;}
+  .lightbox img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    border-radius:8px;
+  }
+
+  @media (max-width:640px){
+    .fact-grid{grid-template-columns:1fr; gap:2px;}
+    .fact-grid dt{padding-bottom:0;}
+  }
+</style>
+<div class="hero">
+  <div class="hero-inner">
+    <h1 class="fade-in">Press Kit</h1>
+    <p class="fade-in fade-in-d1">Information, assets, and contact details for media and content creators.</p>
+  </div>
+</div>
+
+<section>
+  <h2 class="section-title fade-in">Fact Sheet</h2>
+  <dl class="fact-grid fade-in fade-in-d1">
+    <dt>Studio</dt>
+    <dd>Tale Experiences</dd>
+    <dt>Founded</dt>
+    <dd>2026</dd>
+    <dt>Location</dt>
+    <dd>Finland</dd>
+    <dt>Contact</dt>
+    <dd>taleexperiences@gmail.com<br>taleexperiences.support@gmail.com</dd>
+    <dt>Socials</dt>
+    <dd>
+      <a href="https://discord.gg/wjqpRnrNYR" target="_blank" rel="noopener" style="color:var(--green);">Discord</a> ·
+      <a href="https://www.tiktok.com/@taleexperiences" target="_blank" rel="noopener" style="color:var(--green);">TikTok</a> ·
+      <a href="https://www.instagram.com/tale_experiences" target="_blank" rel="noopener" style="color:var(--green);">Instagram</a> ·
+      <a href="https://www.youtube.com/@TaleExperiences" target="_blank" rel="noopener" style="color:var(--green);">YouTube</a> ·
+      <a href="https://store.steampowered.com/app/4680960" target="_blank" rel="noopener" style="color:var(--green);">Steam</a>
+    </dd>
+  </dl>
+</section>
+
+<section>
+  <h2 class="section-title fade-in">About</h2>
+  <div class="about-text fade-in fade-in-d1">
+    <p>We start with a story and build a game around it. Genre, setting and mechanics are all chosen to serve the tale, not the other way around.</p>
+    <p>Founded in 2026. Our debut title, Fire Lookout: Abandoned Post, is available now on Steam for Windows.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title fade-in">Fire Lookout: Abandoned Post</h2>
+  <dl class="fact-grid fade-in fade-in-d1">
+    <dt>Genre</dt>
+    <dd>First-Person Narrative Mystery</dd>
+    <dt>Release</dt>
+    <dd>June 12, 2026</dd>
+    <dt>Platform</dt>
+    <dd>Windows</dd>
+    <dt>Price</dt>
+    <dd>$6.99</dd>
+    <dt>Steam</dt>
+    <dd><a href="https://store.steampowered.com/app/4680960" target="_blank" rel="noopener" style="color:var(--green);">store.steampowered.com/app/4680960</a></dd>
+    <dt>Trailer</dt>
+    <dd><a href="https://www.youtube.com/watch?v=sXhh7HV_QMg" target="_blank" rel="noopener" style="color:var(--green);">youtube.com/watch?v=sXhh7HV_QMg</a></dd>
+    <dt>Description</dt>
+    <dd>A first-person narrative-driven mystery game. As a newly hired fire lookout stationed deep in Summit Ridge National Park, you explore the atmospheric landscape, connect with colleagues over the radio, and uncover the truth behind what happened, at a cost.</dd>
+  </dl>
+</section>
+
+<section>
+  <h2 class="section-title fade-in">Logos</h2>
+  <div class="logo-grid fade-in fade-in-d1">
+    <div class="logo-card">
+      <img src="/Tale%20Experiences%20Png.png" alt="Tale Experiences full logo">
+      <a href="/Tale%20Experiences%20Png.png" download>Download PNG</a>
+    </div>
+    <div class="logo-card">
+      <img src="/Tale%20Experiences%20Mini%20(3).png" alt="Tale Experiences icon">
+      <a href="/Tale%20Experiences%20Mini%20(3).png" download>Download PNG</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title fade-in">Screenshots</h2>
+  <p style="font-size:14px;color:var(--steel-dim);margin-bottom:20px;">Click to view full size.</p>
+  <div class="screenshot-grid fade-in fade-in-d1">
+    <img src="/Update.png" alt="Fire Lookout update" loading="lazy">
+    <img src="/Renders.0000_1.png" alt="Fire Lookout render" loading="lazy">
+    <img src="/Renders.00005_2.png" alt="Fire Lookout render" loading="lazy">
+    <img src="/TrailerFireLookout.png" alt="Fire Lookout trailer still" loading="lazy">
+    <img src="/library_hero.png" alt="Summit Ridge National Park" loading="lazy">
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox"><img src="" alt=""></div>
+
+<script>
+  document.querySelectorAll('.screenshot-grid img').forEach(img => {
+    img.addEventListener('click', () => {
+      const lb = document.getElementById('lightbox');
+      lb.querySelector('img').src = img.src;
+      lb.classList.add('open');
+    });
+  });
+  document.getElementById('lightbox').addEventListener('click', function() {
+    this.classList.remove('open');
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('open');
+  });
+</script>
+</div>
+
+<div class="socials-bar">
+  <a href="https://discord.gg/wjqpRnrNYR" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 5.3A18 18 0 0 0 15.8 4l-.3.6a13 13 0 0 1 3.9 1.6 14.7 14.7 0 0 0-12.8 0 13 13 0 0 1 4-1.6L10.2 4a18 18 0 0 0-4.5 1.4C3.4 9 2.7 12.6 3 16.1A18.4 18.4 0 0 0 8.4 19l.7-1.2a11.6 11.6 0 0 1-1.8-.9c.2-.1.3-.2.5-.3a13 13 0 0 0 9.4 0l.5.3c-.6.4-1.2.6-1.8.9l.7 1.2a18.4 18.4 0 0 0 5.4-2.9c.4-4.3-.7-7.8-2.7-10.8zM9.7 14.3c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.6 1.7-1.5 1.7zm5.6 0c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.6 1.7-1.5 1.7z"/></svg>
+    Discord
+  </a>
+  <a href="https://www.tiktok.com/@taleexperiences" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8a4.3 4.3 0 0 1-3.1-1.4v8.9a4.6 4.6 0 1 1-3.9-4.5v2.3a2.3 2.3 0 1 0 1.6 2.2V2h2.3a4.3 4.3 0 0 0 3.1 3.6z"/></svg>
+    TikTok
+  </a>
+  <a href="https://www.instagram.com/tale_experiences" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+    Instagram
+  </a>
+  <a href="https://store.steampowered.com/app/4680960" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.0052 2C6.75435 2 2.44852 6.05 2.04102 11.1975L7.40102 13.4125C7.85518 13.1033 8.40352 12.9208 8.99435 12.9208C9.04685 12.9208 9.09852 12.9242 9.15102 12.9258L11.5352 9.47417V9.425C11.5352 7.34583 13.2252 5.655 15.3052 5.655C17.3835 5.655 19.0752 7.3475 19.0752 9.4275C19.0752 11.5075 17.3835 13.1983 15.3052 13.1983H15.2177L11.821 15.6242C11.821 15.6675 11.8243 15.7117 11.8243 15.7567C11.8243 17.3192 10.5618 18.5867 8.99935 18.5867C7.63685 18.5867 6.48602 17.6092 6.22352 16.3142L2.38602 14.725C3.57435 18.9225 7.42768 22 12.0052 22C17.5277 22 22.0043 17.5225 22.0043 12C22.0043 6.4775 17.5268 2 12.0052 2ZM7.07852 16.6667C7.29685 17.1192 7.67352 17.4992 8.17352 17.7083C9.25435 18.1575 10.501 17.645 10.9502 16.5625C11.1693 16.0375 11.1702 15.4633 10.9543 14.9383C10.7385 14.4133 10.3293 14.0042 9.80685 13.7858C9.28685 13.5692 8.73185 13.5783 8.24185 13.7608L9.51102 14.2858C10.3077 14.6192 10.6852 15.5358 10.3518 16.3317C10.021 17.1292 9.10435 17.5067 8.30685 17.175L7.07852 16.6667ZM17.8185 9.4225C17.8185 8.0375 16.691 6.91 15.306 6.91C13.9185 6.91 12.7935 8.0375 12.7935 9.4225C12.7935 10.81 13.9185 11.935 15.306 11.935C16.6918 11.935 17.8185 10.81 17.8185 9.4225ZM15.3118 7.53C16.3527 7.53 17.2002 8.375 17.2002 9.41833C17.2002 10.4608 16.3527 11.3058 15.3118 11.3058C14.2677 11.3058 13.4243 10.4608 13.4243 9.41833C13.4243 8.375 14.2685 7.53 15.3118 7.53Z"/></svg>
+    Steam
+  </a>
+  <a href="https://www.youtube.com/@TaleExperiences" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4a2.6 2.6 0 0 0-1.8 1.8C2 8.7 2 12 2 12s0 3.3.4 4.8a2.6 2.6 0 0 0 1.8 1.8c1.5.4 7.8.4 7.8.4s6.3 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.8C22 15.3 22 12 22 12s0-3.3-.4-4.8z"/><path d="M10 15.5V8.5l5.2 3.5z" fill="#07090b"/></svg>
+    YouTube
+  </a>
+</div>
+
+<footer>
+  <div>&copy; 2026 Tale Experiences. All rights reserved.</div>
+  <div style="margin-top:10px; font-size:11px;">
+    <a href="/privacy/" style="color:var(--steel-dim);">Privacy Policy</a>
+    <span style="margin:0 8px; color:var(--steel-dim);">&middot;</span>
+    <a href="/legal/" style="color:var(--steel-dim);">Legal Notice</a>
+  </div>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>
